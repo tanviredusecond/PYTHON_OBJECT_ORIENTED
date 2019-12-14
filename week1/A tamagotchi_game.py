@@ -188,10 +188,19 @@ class Bird(Pet):
         ## now adding a new instance variable inside the constructor
         self.chirp_number = chirp_number
 
-    ## overwriting the function
+    ## overwriting the function hi
+
+    def hi(self):
+        for i in range(self.chirp_number):
+            print (self.sounds[randrange(len(self.sounds))])
+            self.reduce_boredom()
 
 
 
-b = Bird()
+#b = Bird()
+b1 = Bird('tweety',5)
+print(b1)
 
-print(b)
+## appending new word
+b1.teach("Craker")
+b1.hi()
